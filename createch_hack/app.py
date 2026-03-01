@@ -459,7 +459,7 @@ def simulate_sensor_data(
     np.random.seed(random_seed)
     s: Dict[str, Any] = SCENARIOS.get(scenario, SCENARIOS["Normal"])
 
-    base_time: datetime = datetime(2025, 1, 1, 8, 0, 0)
+    base_time: datetime = datetime(2026, 3, 1, 8, 0, 0)
     timestamps: List[datetime] = [
         base_time + timedelta(minutes=15 * i) for i in range(n_points)
     ]
@@ -1780,3 +1780,4 @@ th {{ background: #f8f9fa; }}
 
 if __name__ == "__main__":
     main()
+
